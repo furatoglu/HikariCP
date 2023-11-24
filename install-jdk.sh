@@ -75,12 +75,6 @@ function script_exit() {
     script_exit 'Invalid arguments passed to script_exit()!' 2
 }
 
-function say() {
-    if [[ ${silent} != true ]]; then
-        echo "$@"
-    fi
-}
-
 function verbose() {
     if [[ ${verbose} == true ]]; then
         echo "$@"
